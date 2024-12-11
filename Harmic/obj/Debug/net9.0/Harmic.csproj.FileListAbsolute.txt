@@ -2604,3 +2604,4 @@ C:\Users\NKAQuoc002\Code\Harmic\Harmic\obj\Debug\net9.0\compressed\r7tu4y433l-d3
 C:\Users\NKAQuoc002\Code\Harmic\Harmic\obj\Debug\net9.0\scopedcss\Areas\Admin\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\NKAQuoc002\Code\Harmic\Harmic\obj\Debug\net9.0\compressed\c6sfpv7c4m-zjdj2upv2v.gz
 C:\Users\NKAQuoc002\Code\Harmic\Harmic\obj\Debug\net9.0\compressed\9gukxomx99-zjdj2upv2v.gz
+C:\Users\NKAQuoc002\Code\Harmic\Harmic\obj\Debug\net9.0\Harmic.sourcelink.json
