@@ -64,6 +64,22 @@
           "lib/netstandard2.0/elFinder.Net.Core.dll": {}
         }
       },
+      "elFinder.NetCore/1.4.1": {
+        "type": "package",
+        "dependencies": {
+          "SixLabors.ImageSharp": "3.1.5",
+          "System.Text.Json": "8.0.5"
+        },
+        "compile": {
+          "lib/net8.0/elFinder.NetCore.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/elFinder.NetCore.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Humanizer/2.14.1": {
         "type": "package",
         "dependencies": {
@@ -2288,21 +2304,20 @@
           "lib/netstandard2.0/NuGet.Versioning.dll": {}
         }
       },
-      "SixLabors.ImageSharp/2.0.0": {
+      "SixLabors.ImageSharp/3.1.5": {
         "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "5.0.0",
-          "System.Text.Encoding.CodePages": "5.0.0"
-        },
         "compile": {
-          "lib/netcoreapp3.1/SixLabors.ImageSharp.dll": {
+          "lib/net6.0/SixLabors.ImageSharp.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netcoreapp3.1/SixLabors.ImageSharp.dll": {
+          "lib/net6.0/SixLabors.ImageSharp.dll": {
             "related": ".xml"
           }
+        },
+        "build": {
+          "build/_._": {}
         }
       },
       "SlugGenerator/2.0.2": {
@@ -2837,7 +2852,7 @@
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/System.Text.Encoding.CodePages.dll": {
+          "lib/net6.0/_._": {
             "related": ".xml"
           }
         },
@@ -3014,6 +3029,18 @@
         "elfinder.net.core.nuspec",
         "lib/netstandard2.0/elFinder.Net.Core.dll",
         "logo.png"
+      ]
+    },
+    "elFinder.NetCore/1.4.1": {
+      "sha512": "b4BQzigofZE80KEwB4Bmq9mCuJbJGDGaCTPvW7F9F1v4e1EWDxXoOSUo4R4M6jTJF3cIGCbqzOsxMIUhmPkmEQ==",
+      "type": "package",
+      "path": "elfinder.netcore/1.4.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "elfinder.netcore.1.4.1.nupkg.sha512",
+        "elfinder.netcore.nuspec",
+        "lib/net8.0/elFinder.NetCore.dll"
       ]
     },
     "Humanizer/2.14.1": {
@@ -6643,25 +6670,19 @@
         "nuget.versioning.nuspec"
       ]
     },
-    "SixLabors.ImageSharp/2.0.0": {
-      "sha512": "hZmADrZvn1q9tjPNuuvvl8F8vkz+LFEhnfBkuvwq6Bjgyj3BcOBk6ct4qfssrs25vWIITeH1HkIVdcCYWacpLw==",
+    "SixLabors.ImageSharp/3.1.5": {
+      "sha512": "lNtlq7dSI/QEbYey+A0xn48z5w4XHSffF8222cC4F4YwTXfEImuiBavQcWjr49LThT/pRmtWJRcqA/PlL+eJ6g==",
       "type": "package",
-      "path": "sixlabors.imagesharp/2.0.0",
+      "path": "sixlabors.imagesharp/3.1.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/net472/SixLabors.ImageSharp.dll",
-        "lib/net472/SixLabors.ImageSharp.xml",
-        "lib/netcoreapp2.1/SixLabors.ImageSharp.dll",
-        "lib/netcoreapp2.1/SixLabors.ImageSharp.xml",
-        "lib/netcoreapp3.1/SixLabors.ImageSharp.dll",
-        "lib/netcoreapp3.1/SixLabors.ImageSharp.xml",
-        "lib/netstandard2.0/SixLabors.ImageSharp.dll",
-        "lib/netstandard2.0/SixLabors.ImageSharp.xml",
-        "lib/netstandard2.1/SixLabors.ImageSharp.dll",
-        "lib/netstandard2.1/SixLabors.ImageSharp.xml",
+        "LICENSE",
+        "build/SixLabors.ImageSharp.props",
+        "lib/net6.0/SixLabors.ImageSharp.dll",
+        "lib/net6.0/SixLabors.ImageSharp.xml",
         "sixlabors.imagesharp.128.png",
-        "sixlabors.imagesharp.2.0.0.nupkg.sha512",
+        "sixlabors.imagesharp.3.1.5.nupkg.sha512",
         "sixlabors.imagesharp.nuspec"
       ]
     },
@@ -7989,7 +8010,8 @@
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 9.0.0",
       "SlugGenerator >= 2.0.2",
       "X.PagedList.Mvc.Core >= 10.5.7",
-      "elFinder.Net.Core >= 1.5.0"
+      "elFinder.Net.Core >= 1.5.0",
+      "elFinder.NetCore >= 1.4.1"
     ]
   },
   "packageFolders": {
@@ -8075,6 +8097,10 @@
           "elFinder.Net.Core": {
             "target": "Package",
             "version": "[1.5.0, )"
+          },
+          "elFinder.NetCore": {
+            "target": "Package",
+            "version": "[1.4.1, )"
           }
         },
         "imports": [
@@ -8099,57 +8125,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1902",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'SixLabors.ImageSharp' 2.0.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-5x7m-6737-26cr",
-      "libraryId": "SixLabors.ImageSharp",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'SixLabors.ImageSharp' 2.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-63p8-c4ww-9cg7",
-      "libraryId": "SixLabors.ImageSharp",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'SixLabors.ImageSharp' 2.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-65x7-c272-7g7r",
-      "libraryId": "SixLabors.ImageSharp",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    },
-    {
-      "code": "NU1902",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'SixLabors.ImageSharp' 2.0.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-g85r-6x2q-45w7",
-      "libraryId": "SixLabors.ImageSharp",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    },
-    {
-      "code": "NU1902",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'SixLabors.ImageSharp' 2.0.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-qxrv-gp6x-rc23",
-      "libraryId": "SixLabors.ImageSharp",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    }
-  ]
+  }
 }

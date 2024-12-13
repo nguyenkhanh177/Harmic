@@ -45,6 +45,7 @@
           "SlugGenerator": "2.0.2",
           "X.PagedList.Mvc.Core": "10.5.7",
           "elFinder.Net.Core": "1.5.0",
+          "elFinder.NetCore": "1.4.1",
           "Microsoft.AspNetCore.Antiforgery": "9.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "9.0.0.0",
           "Microsoft.AspNetCore.Authentication.BearerToken": "9.0.0.0",
@@ -403,7 +404,7 @@
           "Microsoft.Extensions.Primitives": "9.0.0",
           "Microsoft.Net.Http.Headers": "2.1.14",
           "MimeTypeMapOfficial": "1.0.15",
-          "SixLabors.ImageSharp": "2.0.0"
+          "SixLabors.ImageSharp": "3.1.5"
         },
         "runtime": {
           "lib/netstandard2.0/elFinder.Net.Core.dll": {
@@ -413,6 +414,21 @@
         },
         "compile": {
           "lib/netstandard2.0/elFinder.Net.Core.dll": {}
+        }
+      },
+      "elFinder.NetCore/1.4.1": {
+        "dependencies": {
+          "SixLabors.ImageSharp": "3.1.5",
+          "System.Text.Json": "9.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/elFinder.NetCore.dll": {
+            "assemblyVersion": "1.4.1.0",
+            "fileVersion": "1.4.1.0"
+          }
+        },
+        "compile": {
+          "lib/net8.0/elFinder.NetCore.dll": {}
         }
       },
       "Humanizer/2.14.1": {
@@ -2346,19 +2362,15 @@
           "lib/netstandard2.0/NuGet.Versioning.dll": {}
         }
       },
-      "SixLabors.ImageSharp/2.0.0": {
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "6.0.0",
-          "System.Text.Encoding.CodePages": "6.0.0"
-        },
+      "SixLabors.ImageSharp/3.1.5": {
         "runtime": {
-          "lib/netcoreapp3.1/SixLabors.ImageSharp.dll": {
-            "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.0.0.0"
+          "lib/net6.0/SixLabors.ImageSharp.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.1.5.0"
           }
         },
         "compile": {
-          "lib/netcoreapp3.1/SixLabors.ImageSharp.dll": {}
+          "lib/net6.0/SixLabors.ImageSharp.dll": {}
         }
       },
       "SlugGenerator/2.0.2": {
@@ -4489,6 +4501,13 @@
       "path": "elfinder.net.core/1.5.0",
       "hashPath": "elfinder.net.core.1.5.0.nupkg.sha512"
     },
+    "elFinder.NetCore/1.4.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-b4BQzigofZE80KEwB4Bmq9mCuJbJGDGaCTPvW7F9F1v4e1EWDxXoOSUo4R4M6jTJF3cIGCbqzOsxMIUhmPkmEQ==",
+      "path": "elfinder.netcore/1.4.1",
+      "hashPath": "elfinder.netcore.1.4.1.nupkg.sha512"
+    },
     "Humanizer/2.14.1": {
       "type": "package",
       "serviceable": true,
@@ -5350,12 +5369,12 @@
       "path": "nuget.versioning/6.11.0",
       "hashPath": "nuget.versioning.6.11.0.nupkg.sha512"
     },
-    "SixLabors.ImageSharp/2.0.0": {
+    "SixLabors.ImageSharp/3.1.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-hZmADrZvn1q9tjPNuuvvl8F8vkz+LFEhnfBkuvwq6Bjgyj3BcOBk6ct4qfssrs25vWIITeH1HkIVdcCYWacpLw==",
-      "path": "sixlabors.imagesharp/2.0.0",
-      "hashPath": "sixlabors.imagesharp.2.0.0.nupkg.sha512"
+      "sha512": "sha512-lNtlq7dSI/QEbYey+A0xn48z5w4XHSffF8222cC4F4YwTXfEImuiBavQcWjr49LThT/pRmtWJRcqA/PlL+eJ6g==",
+      "path": "sixlabors.imagesharp/3.1.5",
+      "hashPath": "sixlabors.imagesharp.3.1.5.nupkg.sha512"
     },
     "SlugGenerator/2.0.2": {
       "type": "package",
