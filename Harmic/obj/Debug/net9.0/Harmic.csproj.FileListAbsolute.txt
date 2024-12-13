@@ -3008,3 +3008,7 @@ C:\Users\NKAQuoc002\Code\Harmic\Harmic\obj\Debug\net9.0\compressed\zbp6wrbfb3-hc
 C:\Users\NKAQuoc002\Code\Harmic\Harmic\obj\Debug\net9.0\compressed\on18xoircv-g87wm0aulg.gz
 C:\Users\NKAQuoc002\Code\Harmic\Harmic\obj\Debug\net9.0\compressed\bryracj2ez-nu5lza4xt2.gz
 C:\Users\NKAQuoc002\Code\Harmic\Harmic\obj\Debug\net9.0\compressed\0yybz54nun-0sghsm7od2.gz
+C:\Users\NKAQuoc002\Code\Harmic\Harmic\obj\Debug\net9.0\compressed\44gfhom75r-7znil99lx5.gz
+C:\Users\NKAQuoc002\Code\Harmic\Harmic\obj\Debug\net9.0\compressed\u0u5n0u3ba-jw5ahztbe4.gz
+C:\Users\NKAQuoc002\Code\Harmic\Harmic\obj\Debug\net9.0\compressed\sfv6dr1f1w-fuwkiubrsj.gz
+C:\Users\NKAQuoc002\Code\Harmic\Harmic\obj\Debug\net9.0\compressed\enug7doeq7-uhmk5snb2d.gz

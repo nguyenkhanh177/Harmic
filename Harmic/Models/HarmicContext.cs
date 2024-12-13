@@ -45,6 +45,7 @@ public partial class HarmicContext : DbContext
 
     public virtual DbSet<TbRole> TbRoles { get; set; }
 
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<TbAccount>(entity =>
@@ -131,11 +132,10 @@ public partial class HarmicContext : DbContext
 
         modelBuilder.Entity<TbContact>(entity =>
         {
-            entity
-                .HasNoKey()
-                .ToTable("tb_Contact");
+            entity.HasKey(e => e.ContactId);
 
-            entity.Property(e => e.ContactId).ValueGeneratedOnAdd();
+            entity.ToTable("tb_Contact");
+
             entity.Property(e => e.CreatedBy).HasMaxLength(150);
             entity.Property(e => e.CreatedDate).HasColumnType("datetime");
             entity.Property(e => e.Email).HasMaxLength(150);

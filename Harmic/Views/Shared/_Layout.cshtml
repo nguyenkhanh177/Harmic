@@ -27,6 +27,7 @@
 
     <!-- Style CSS -->
     <link rel="stylesheet" href="~/assets/css/style.css">
+    <link href="~/assets/toastr/toastr.css" rel="stylesheet" />
 
 </head>
 
@@ -534,7 +535,7 @@
             <div class="global-overlay"></div>
         </header>
         <!-- Main Header Area End Here -->
-       @RenderBody()
+        @RenderBody()
         <!-- Begin Footer Area -->
         <div class="footer-area">
             <div class="footer-top section-space-y-axis-100 text-black" data-bg-color="#e5ddcc">
@@ -676,6 +677,9 @@
 
     <!--Main JS (Common Activation Codes)-->
     <script src="~/assets/js/main.js"></script>
+    <script src="~/assets/js/untils.js"></script>
+    <script src="~/assets/toastr/toastr.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
 
 </body>
 
